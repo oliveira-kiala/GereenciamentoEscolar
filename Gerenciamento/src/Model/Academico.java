@@ -20,7 +20,7 @@ public class Academico {
     private String telef;
     private String rg;
     private String data_Nasc;
-    private char sexo;
+    private String sexo;
     private String cep;
     private String estado;
     private String cidade;
@@ -89,11 +89,11 @@ public class Academico {
         this.data_Nasc = data_Nasc;
     }
 
-    public char getSexo() {
+    public String getSexo() {
         return sexo;
     }
 
-    public void setSexo(char sexo) {
+    public void setSexo(String sexo) {
         this.sexo = sexo;
     }
 

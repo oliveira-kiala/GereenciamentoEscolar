@@ -5,20 +5,24 @@ package Visao;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author comp2
  */
+import Control.ControlAcademico;
+import Model.Academico;
+import javax.swing.JOptionPane;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+
 public class CadastroAcademico extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form CadastroAcademico
      */
+    private ControlAcademico listener = new ControlAcademico(this);
     public CadastroAcademico() {
         initComponents();
-       
-        
+
     }
 
     /**
@@ -56,6 +60,7 @@ public class CadastroAcademico extends javax.swing.JInternalFrame {
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        limpar = new javax.swing.JButton();
 
         setClosable(true);
         setTitle("Cadastro Academico");
@@ -72,6 +77,12 @@ public class CadastroAcademico extends javax.swing.JInternalFrame {
             }
         });
 
+        Textgrau.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TextgrauActionPerformed(evt);
+            }
+        });
+
         TextRG.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TextRGActionPerformed(evt);
@@ -79,6 +90,14 @@ public class CadastroAcademico extends javax.swing.JInternalFrame {
         });
 
         Buttoncadastrar.setText("Cadastrar");
+        /*
+        Buttoncadastrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtoncadastrarActionPerformed(evt);
+            }
+        });
+        */
+        Buttoncadastrar.addActionListener(listener);
 
         jLabel1.setText("Nome");
 
@@ -104,14 +123,16 @@ public class CadastroAcademico extends javax.swing.JInternalFrame {
 
         jLabel13.setText("RG");
 
+        limpar.setText("Limpar");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(27, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addComponent(jLabel1)
@@ -143,11 +164,13 @@ public class CadastroAcademico extends javax.swing.JInternalFrame {
                                     .addComponent(Texttelefone)
                                     .addComponent(TextRG)
                                     .addComponent(Textnascimento, javax.swing.GroupLayout.DEFAULT_SIZE, 267, Short.MAX_VALUE)))
-                            .addComponent(Textcidade))
-                        .addGap(22, 22, 22))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addComponent(Textcidade)))
+                    .addGroup(layout.createSequentialGroup()
                         .addComponent(Buttoncadastrar)
-                        .addGap(142, 142, 142))))
+                        .addGap(81, 81, 81)
+                        .addComponent(limpar)
+                        .addGap(79, 79, 79)))
+                .addGap(22, 22, 22))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -201,9 +224,11 @@ public class CadastroAcademico extends javax.swing.JInternalFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Textcidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel12))
-                .addGap(18, 18, 18)
-                .addComponent(Buttoncadastrar)
-                .addContainerGap(128, Short.MAX_VALUE))
+                .addGap(33, 33, 33)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(limpar)
+                    .addComponent(Buttoncadastrar))
+                .addContainerGap(112, Short.MAX_VALUE))
         );
 
         setBounds(0, 0, 472, 631);
@@ -221,21 +246,29 @@ public class CadastroAcademico extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_TextnomeActionPerformed
 
+    private void TextgrauActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextgrauActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TextgrauActionPerformed
+
+    private void ButtoncadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtoncadastrarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ButtoncadastrarActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Buttoncadastrar;
-    private javax.swing.JTextField TextCEP;
-    private javax.swing.JTextField TextRG;
-    private javax.swing.JTextField Textcidade;
-    private javax.swing.JTextField Textcurso;
-    private javax.swing.JTextField Textestado;
-    private javax.swing.JTextField Textgrau;
-    private javax.swing.JTextField Textmatricula;
-    private javax.swing.JTextField Textnascimento;
-    private javax.swing.JTextField Textnome;
-    private javax.swing.JTextField Textserie;
-    private javax.swing.JTextField Textsexo;
-    private javax.swing.JTextField Texttelefone;
+    public javax.swing.JTextField TextCEP;
+    public javax.swing.JTextField TextRG;
+    public javax.swing.JTextField Textcidade;
+    public javax.swing.JTextField Textcurso;
+    public javax.swing.JTextField Textestado;
+    public javax.swing.JTextField Textgrau;
+    public javax.swing.JTextField Textmatricula;
+    public javax.swing.JTextField Textnascimento;
+    public javax.swing.JTextField Textnome;
+    public javax.swing.JTextField Textserie;
+    public javax.swing.JTextField Textsexo;
+    public javax.swing.JTextField Texttelefone;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -249,5 +282,6 @@ public class CadastroAcademico extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JButton limpar;
     // End of variables declaration//GEN-END:variables
 }
