@@ -1,16 +1,22 @@
 package Model;
 
 public class Professor {
-    
+
     private String nome;
     private String titulo;
-    private String numMatricula;
+    private String codigo;
     private String cpf;
     private String rg;
     private String discipl;
     private String cep;
-    private String cidade_Munic;
+    private String cidade;
     private String estado;
+    private String telef;
+    private String email;
+    private String endereco;
+    private String bairro;
+    private String masculino;
+    private String femenino;
 
     public String getNome() {
         return nome;
@@ -28,12 +34,12 @@ public class Professor {
         this.titulo = titulo;
     }
 
-    public String getNumMatricula() {
-        return numMatricula;
+    public String getCodigo() {
+        return codigo;
     }
 
-    public void setNumMatricula(String numMatricula) {
-        this.numMatricula = numMatricula;
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
     }
 
     public String getCpf() {
@@ -68,12 +74,12 @@ public class Professor {
         this.cep = cep;
     }
 
-    public String getCidade_Munic() {
-        return cidade_Munic;
+    public String getCidade() {
+        return cidade;
     }
 
-    public void setCidade_Munic(String cidade_Munic) {
-        this.cidade_Munic = cidade_Munic;
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
     }
 
     public String getEstado() {
@@ -84,6 +90,54 @@ public class Professor {
         this.estado = estado;
     }
 
+    public String getTelef() {
+        return telef;
+    }
+
+    public void setTelef(String telef) {
+        this.telef = telef;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public String getBairro() {
+        return bairro;
+    }
+
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
+    }
+
+    public String getMasculino() {
+        return masculino;
+    }
+
+    public void setMasculino(String masculino) {
+        this.masculino = masculino;
+    }
+
+    public String getFemenino() {
+        return femenino;
+    }
+
+    public void setFemenino(String femenino) {
+        this.femenino = femenino;
+    }
     
     
+
 }

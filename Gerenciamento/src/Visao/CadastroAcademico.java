@@ -123,6 +123,8 @@ public class CadastroAcademico extends javax.swing.JInternalFrame {
 
         jLabel13.setText("RG");
 
+        limpar.addActionListener(listener);
+        limpar.setActionCommand("login");
         limpar.setText("Limpar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

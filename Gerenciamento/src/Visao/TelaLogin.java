@@ -1,6 +1,7 @@
 package Visao;
 
 
+import Control.ControlLogin;
 import Visao.Interface;
 import javax.swing.JOptionPane;
 
@@ -16,6 +17,7 @@ import javax.swing.JOptionPane;
  */
 public class TelaLogin extends javax.swing.JFrame {
 
+   private ControlLogin listener = new ControlLogin(this);
     /**
      * Creates new form TelaLogin
      */
@@ -43,6 +45,8 @@ public class TelaLogin extends javax.swing.JFrame {
         setTitle("Login");
         getContentPane().setLayout(null);
 
+        botaoLogin.addActionListener(listener);
+        botaoLogin.setActionCommand("login");
         botaoLogin.setText("Fazer Login");
         botaoLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,21 +92,15 @@ public class TelaLogin extends javax.swing.JFrame {
 
     private void botaoLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoLoginActionPerformed
         // login
-        if(usuario1.getText().equals("administrador") && senha1.getText().equals("1234")){
-            Interface tela = new Interface();
-            tela.setVisible(true);
-            dispose();
-        }else{
-            JOptionPane.showMessageDialog(null,"Usuário ou senha Inválida");
-        }
+        
     }//GEN-LAST:event_botaoLoginActionPerformed
 
     private void usuario1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuario1ActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_usuario1ActionPerformed
 
     private void senha1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_senha1ActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_senha1ActionPerformed
 
     /**
@@ -145,7 +143,7 @@ public class TelaLogin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JPasswordField senha1;
-    private javax.swing.JTextField usuario1;
+    public javax.swing.JPasswordField senha1;
+    public javax.swing.JTextField usuario1;
     // End of variables declaration//GEN-END:variables
 }

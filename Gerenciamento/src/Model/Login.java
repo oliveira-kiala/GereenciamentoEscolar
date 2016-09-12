@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Model;
 
 /**
@@ -11,4 +6,23 @@ package Model;
  */
 public class Login {
     
+    private String senha1;
+    private String usuario1;
+    
+
+    public String getSenha1() {
+        return senha1;
+    }
+
+    public String getUsuario1() {
+        return usuario1;
+    }
+
+    public void setSenha1(String senha1) {
+        this.senha1 = senha1;
+    }
+
+    public void setUsuario1(String usuario1) {
+        this.usuario1 = usuario1;
+    }    
 }

@@ -6,16 +6,16 @@
 package Control;
 
 import Model.Professor;
-import Visao.CadastroProfessor;
+import Visao.CadastroProfessor1;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 
 public class ControlProfessor implements ActionListener {
 
-    private CadastroProfessor frame;
+    private CadastroProfessor1 frame;
 
-    public ControlProfessor(CadastroProfessor frame) {
+    public ControlProfessor(CadastroProfessor1 frame) {
         this.frame = frame;
     }
 
@@ -28,38 +28,58 @@ public class ControlProfessor implements ActionListener {
         Professor p = new Professor();
 
         p.setNome(frame.Textnome.getText());
-        p.setTitulo(frame.TextTitulo.getText());
-        p.setNumMatricula(frame.matricula.getText());
+        p.setEmail(frame.jTextEmail.getText());
+        p.setCodigo(frame.codigo.getText());
+        p.setEndereco(frame.jTextEndereco.getText());
+        p.setCidade(frame.Cidade.getText());
+        p.setBairro(frame.jTextBairro.getText());
         p.setCpf(frame.TextCPF.getText());
-        p.setRg(frame.TextRG.getText());
-        p.setDiscipl(frame.TextDisciplina.getText());
         p.setCep(frame.CEP.getText());
-        p.setCidade_Munic(frame.CidadeMunic.getText());
-        p.setEstado(frame.Estado.getText());
+        p.setRg(frame.TextRG.getText());
+        //p.setTitulo(frame.TextTitulo.getText());
+        p.setMasculino(frame.jRadioMasculino.getText());
+        p.setFemenino(frame.jRadioFemenino.getText());
+        //p.setEstado(frame.Estado.getText());
+        p.setTelef(frame.jTextTelef.getText());
+        //p.setEstado(frame. TextDisciplina .getText());
 
         if ("Limpar".equalsIgnoreCase(ae.getActionCommand())) {
             frame.Textnome.setText("");
-            frame.TextTitulo.setText("");
-            frame.matricula.setText("");
+            frame.jTextEmail.setText("");
+            frame.codigo.setText("");
+            frame.jTextEndereco.setText("");
+            frame.Cidade.setText("");
+            frame.jTextBairro.setText("");
             frame.TextCPF.setText("");
-            frame.TextRG.setText("");
-            frame.TextDisciplina.setText("");
             frame.CEP.setText("");
-            frame.CidadeMunic.setText("");
-            frame.Estado.setText("");
+            frame.TextRG.setText("");
+            // frame.TextTitulo.setText("");
+            frame.jRadioMasculino.setText("");
+            frame.jRadioFemenino.setText("");
+            //  frame.Estado.setText("");
+            frame.jTextTelef.setText("");
+           // frame.TextDisciplina.setText("");
+
         }
 
         if ("Cadastrar".equals(ae.getActionCommand())) {
 
             JOptionPane.showMessageDialog(null, p.getNome() + ""
-                    + "\n" + p.getTitulo() + ""
-                    + "\n" + p.getNumMatricula() + ""
+                    + "\n" + p.getNome() + ""
+                    + "\n" + p.getEmail() + ""
+                    + "\n" + p.getCodigo() + ""
+                    + "\n" + p.getEndereco() + ""
+                    + "\n" + p.getCidade() + ""
+                    + "\n" + p.getBairro() + ""
                     + "\n" + p.getCpf() + ""
-                    + "\n" + p.getRg() + ""
-                    + "\n" + p.getDiscipl() + ""
                     + "\n" + p.getCep() + ""
-                    + "\n" + p.getCidade_Munic() + ""
-                    + "\n" + p.getEstado());
+                    + "\n" + p.getRg() + ""
+                    + "\n" + p.getTitulo() + ""
+                    + "\n" + p.getMasculino() + ""
+                    + "\n" + p.getFemenino() + ""
+                    + "\n" + p.getEstado() + ""
+                    + "\n" + p.getTelef() + ""
+                    + "\n" + p.getDiscipl());
         }
 
     }

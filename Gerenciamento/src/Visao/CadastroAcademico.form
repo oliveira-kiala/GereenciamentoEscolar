@@ -305,6 +305,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Limpar"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="limpar.addActionListener(listener);&#xa;limpar.setActionCommand(&quot;login&quot;);"/>
+      </AuxValues>
     </Component>
   </SubComponents>
 </Form>
