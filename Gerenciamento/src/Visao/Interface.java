@@ -1,6 +1,6 @@
 package Visao;
 
-import Control.ControlProfessor;
+import Control.ControlInterface;
 import javax.swing.JTable;
 /**
  *
@@ -10,6 +10,10 @@ public class Interface extends javax.swing.JFrame {
     /**
      * Creates new form Interface
      */
+    
+    ControlInterface listener = new ControlInterface(this);
+    
+    
     public Interface() {
         initComponents();
        
@@ -25,8 +29,8 @@ public class Interface extends javax.swing.JFrame {
         PainelPrincipal1 = new javax.swing.JDesktopPane();
         BarraMenu1 = new javax.swing.JMenuBar();
         Menucadastro1 = new javax.swing.JMenu();
-        MenuItemCadastroAcademico2 = new javax.swing.JMenuItem();
         MenuItemCadastroProfessor1 = new javax.swing.JMenuItem();
+        MenuItemCadastroAcademico2 = new javax.swing.JMenuItem();
         Menurelatorio2 = new javax.swing.JMenu();
         MenuItemRelatorioProfessor3 = new javax.swing.JMenuItem();
         MenuItemRelatorioAcademico4 = new javax.swing.JMenuItem();
@@ -46,20 +50,14 @@ public class Interface extends javax.swing.JFrame {
         );
         PainelPrincipal1Layout.setVerticalGroup(
             PainelPrincipal1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 442, Short.MAX_VALUE)
+            .addGap(0, 373, Short.MAX_VALUE)
         );
 
+        Menucadastro1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cadastros - nova.png"))); // NOI18N
         Menucadastro1.setText("Cadastro   |");
 
-        MenuItemCadastroAcademico2.setText("Acadêmico");
-        MenuItemCadastroAcademico2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MenuItemCadastroAcademico2ActionPerformed(evt);
-            }
-        });
-        Menucadastro1.add(MenuItemCadastroAcademico2);
-
-        MenuItemCadastroProfessor1.setActionCommand("CadastoProfessor");
+        MenuItemCadastroProfessor1.addActionListener(listener);
+        MenuItemCadastroProfessor1.setActionCommand("professor");
         MenuItemCadastroProfessor1.setText("Professor");
         MenuItemCadastroProfessor1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -68,8 +66,19 @@ public class Interface extends javax.swing.JFrame {
         });
         Menucadastro1.add(MenuItemCadastroProfessor1);
 
+        MenuItemCadastroAcademico2.addActionListener(listener);
+        MenuItemCadastroAcademico2.setActionCommand("academico");
+        MenuItemCadastroAcademico2.setText("Acadêmico");
+        MenuItemCadastroAcademico2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuItemCadastroAcademico2ActionPerformed(evt);
+            }
+        });
+        Menucadastro1.add(MenuItemCadastroAcademico2);
+
         BarraMenu1.add(Menucadastro1);
 
+        Menurelatorio2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/relatorio.novo.jpg"))); // NOI18N
         Menurelatorio2.setText("Relatório");
 
         MenuItemRelatorioProfessor3.setText("Professor");
@@ -107,18 +116,18 @@ public class Interface extends javax.swing.JFrame {
     }//GEN-LAST:event_MenuItemCadastroProfessor1ActionPerformed
 
     private void MenuItemRelatorioProfessor3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuItemRelatorioProfessor3ActionPerformed
-        // TODO add your handling code here:
-        CadastroProfessor1 objeto = new CadastroProfessor1();
-        PainelPrincipal1.add(objeto);
-        objeto.setVisible(true);
+
+        /*CadastroProfessor1 objeto = new CadastroProfessor1();
+          PainelPrincipal1.add(objeto);
+          objeto.setVisible(true);*/
 
 
     }//GEN-LAST:event_MenuItemRelatorioProfessor3ActionPerformed
 
     private void MenuItemCadastroAcademico2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuItemCadastroAcademico2ActionPerformed
-        CadastroAcademico objeto = new CadastroAcademico();
-        PainelPrincipal1.add(objeto);
-        objeto.setVisible(true);
+       /* CadastroAcademico objeto = new CadastroAcademico();
+          PainelPrincipal1.add(objeto);
+          objeto.setVisible(true);*/
     }//GEN-LAST:event_MenuItemCadastroAcademico2ActionPerformed
 
     public static void main(String args[]) {
@@ -131,13 +140,13 @@ public class Interface extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar BarraMenu1;
-    private javax.swing.JMenuItem MenuItemCadastroAcademico2;
-    private javax.swing.JMenuItem MenuItemCadastroProfessor1;
+    public javax.swing.JMenuItem MenuItemCadastroAcademico2;
+    public javax.swing.JMenuItem MenuItemCadastroProfessor1;
     private javax.swing.JMenuItem MenuItemRelatorioAcademico4;
     private javax.swing.JMenuItem MenuItemRelatorioProfessor3;
     private javax.swing.JMenu Menucadastro1;
     private javax.swing.JMenu Menurelatorio2;
-    private javax.swing.JDesktopPane PainelPrincipal1;
+    public javax.swing.JDesktopPane PainelPrincipal1;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     // End of variables declaration//GEN-END:variables

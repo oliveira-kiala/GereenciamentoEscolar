@@ -24,17 +24,12 @@
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="Menucadastro1">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imagens/cadastros - nova.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Cadastro   |"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="MenuItemCadastroAcademico2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Acad&#xea;mico"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItemCadastroAcademico2ActionPerformed"/>
-              </Events>
-            </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="MenuItemCadastroProfessor1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Professor"/>
@@ -43,13 +38,29 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItemCadastroProfessor1ActionPerformed"/>
               </Events>
               <AuxValues>
-                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="MenuItemCadastroProfessor1.setActionCommand(&quot;CadastoProfessor&quot;);"/>
+                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="MenuItemCadastroProfessor1.addActionListener(listener);&#xa;MenuItemCadastroProfessor1.setActionCommand(&quot;professor&quot;);"/>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+              </AuxValues>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="MenuItemCadastroAcademico2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Acad&#xea;mico"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItemCadastroAcademico2ActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="MenuItemCadastroAcademico2.addActionListener(listener);&#xa;MenuItemCadastroAcademico2.setActionCommand(&quot;academico&quot;);"/>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
               </AuxValues>
             </MenuItem>
           </SubComponents>
         </Menu>
         <Menu class="javax.swing.JMenu" name="Menurelatorio2">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imagens/relatorio.novo.jpg"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Relat&#xf3;rio"/>
           </Properties>
           <SubComponents>
@@ -108,6 +119,9 @@
   </Layout>
   <SubComponents>
     <Container class="javax.swing.JDesktopPane" name="PainelPrincipal1">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
 
       <Layout>
         <DimensionLayout dim="0">
@@ -117,7 +131,7 @@
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="442" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="373" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>
