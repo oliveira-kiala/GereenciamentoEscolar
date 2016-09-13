@@ -25,9 +25,12 @@
         <Menu class="javax.swing.JMenu" name="Menucadastro1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagens/cadastros - nova.png"/>
+              <Image iconType="3" name="/imagens/cadastros .png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Cadastro   |"/>
+            <Property name="text" type="java.lang.String" value="Cadastro   "/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="12" style="1"/>
+            </Property>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="MenuItemCadastroProfessor1">
@@ -59,9 +62,12 @@
         <Menu class="javax.swing.JMenu" name="Menurelatorio2">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagens/relatorio.novo.jpg"/>
+              <Image iconType="3" name="/imagens/relatorio.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Relat&#xf3;rio"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="12" style="1"/>
+            </Property>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="MenuItemRelatorioProfessor3">
@@ -131,7 +137,7 @@
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="373" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="386" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>

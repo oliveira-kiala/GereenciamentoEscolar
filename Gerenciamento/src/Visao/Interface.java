@@ -50,11 +50,12 @@ public class Interface extends javax.swing.JFrame {
         );
         PainelPrincipal1Layout.setVerticalGroup(
             PainelPrincipal1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 373, Short.MAX_VALUE)
+            .addGap(0, 386, Short.MAX_VALUE)
         );
 
-        Menucadastro1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cadastros - nova.png"))); // NOI18N
-        Menucadastro1.setText("Cadastro   |");
+        Menucadastro1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cadastros .png"))); // NOI18N
+        Menucadastro1.setText("Cadastro   ");
+        Menucadastro1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
 
         MenuItemCadastroProfessor1.addActionListener(listener);
         MenuItemCadastroProfessor1.setActionCommand("professor");
@@ -78,8 +79,9 @@ public class Interface extends javax.swing.JFrame {
 
         BarraMenu1.add(Menucadastro1);
 
-        Menurelatorio2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/relatorio.novo.jpg"))); // NOI18N
+        Menurelatorio2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/relatorio.jpg"))); // NOI18N
         Menurelatorio2.setText("Relatório");
+        Menurelatorio2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
 
         MenuItemRelatorioProfessor3.setText("Professor");
         MenuItemRelatorioProfessor3.addActionListener(new java.awt.event.ActionListener() {
