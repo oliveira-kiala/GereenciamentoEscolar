@@ -36,13 +36,12 @@ public class ControlProfessor implements ActionListener {
         p.setCpf(frame.TextCPF.getText());
         p.setCep(frame.CEP.getText());
         p.setRg(frame.TextRG.getText());
-        //p.setTitulo(frame.TextTitulo.getText());
-        p.setMasculino(frame.jRadioMasculino.getText());
-        p.setFemenino(frame.jRadioFemenino.getText());
-        //p.setEstado(frame.Estado.getText());
+        p.setTitulo((String) frame.TextTitulo.getSelectedItem());
+        p.setEstado((String) frame.Estado.getSelectedItem());
+        p.setDiscipl((String) frame.TextDisciplina.getSelectedItem());
+        p.setSexo((String) frame.sexo_sexo.getSelectedItem());
         p.setTelef(frame.jTextTelef.getText());
-        //p.setEstado(frame. TextDisciplina .getText());
-
+        
         if ("Limpar".equalsIgnoreCase(ae.getActionCommand())) {
             frame.Textnome.setText("");
             frame.jTextEmail.setText("");
@@ -53,12 +52,10 @@ public class ControlProfessor implements ActionListener {
             frame.TextCPF.setText("");
             frame.CEP.setText("");
             frame.TextRG.setText("");
-            // frame.TextTitulo.setText("");
-            frame.jRadioMasculino.setText("");
-            frame.jRadioFemenino.setText("");
-            //  frame.Estado.setText("");
             frame.jTextTelef.setText("");
-           // frame.TextDisciplina.setText("");
+            //frame.TextTitulo.setText("");
+            //frame.Estado.setText("");
+           //frame.TextDisciplina.setText("");
 
         }
 
@@ -75,8 +72,6 @@ public class ControlProfessor implements ActionListener {
                     + "\n" + p.getCep() + ""
                     + "\n" + p.getRg() + ""
                     + "\n" + p.getTitulo() + ""
-                    + "\n" + p.getMasculino() + ""
-                    + "\n" + p.getFemenino() + ""
                     + "\n" + p.getEstado() + ""
                     + "\n" + p.getTelef() + ""
                     + "\n" + p.getDiscipl());

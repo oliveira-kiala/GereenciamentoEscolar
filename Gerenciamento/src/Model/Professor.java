@@ -15,9 +15,15 @@ public class Professor {
     private String email;
     private String endereco;
     private String bairro;
-    private String masculino;
-    private String femenino;
+    private String sexo;
 
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
     public String getNome() {
         return nome;
     }
@@ -121,23 +127,4 @@ public class Professor {
     public void setBairro(String bairro) {
         this.bairro = bairro;
     }
-
-    public String getMasculino() {
-        return masculino;
-    }
-
-    public void setMasculino(String masculino) {
-        this.masculino = masculino;
-    }
-
-    public String getFemenino() {
-        return femenino;
-    }
-
-    public void setFemenino(String femenino) {
-        this.femenino = femenino;
-    }
-    
-    
-
 }
