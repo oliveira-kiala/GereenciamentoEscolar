@@ -1,10 +1,11 @@
 package Model;
+
 /**
  *
  * @author oliveira kiala
  */
 public class Academico {
-    
+
     private String nome;
     private String curso;
     private int serie;
@@ -13,10 +14,40 @@ public class Academico {
     private String telef;
     private String rg;
     private String data_Nasc;
-    private String sexo;
+    private String sexo_sexo;
     private String cep;
     private String estado;
     private String cidade;
+    
+    //private String masculino;
+    //private String femenino;
+    private String email;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    /*
+     public String getMasculino() {
+     return masculino;
+     }
+
+     public void setMasculino(String masculino) {
+     this.masculino = masculino;
+     }
+
+     public String getFemenino() {
+     return femenino;
+     }
+
+     public void setFemenino(String femenino) {
+     this.femenino = femenino;
+     }
+     */
+    
 
     public String getNome() {
         return nome;
@@ -83,11 +114,11 @@ public class Academico {
     }
 
     public String getSexo() {
-        return sexo;
+        return sexo_sexo;
     }
 
     public void setSexo(String sexo) {
-        this.sexo = sexo;
+        this.sexo_sexo = sexo;
     }
 
     public String getCep() {
@@ -97,6 +128,7 @@ public class Academico {
     public void setCep(String cep) {
         this.cep = cep;
     }
+
     public String getEstado() {
         return estado;
     }
@@ -112,5 +144,5 @@ public class Academico {
     public void setCidade(String cidade) {
         this.cidade = cidade;
     }
-    
+
 }

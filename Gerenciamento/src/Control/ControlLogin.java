@@ -35,8 +35,8 @@ public class ControlLogin implements ActionListener {
             } else {
                 JOptionPane.showMessageDialog(null, "Usuário ou senha Inválida");
             }
-            JOptionPane.showMessageDialog(null, g.getUsuario1() + ""
-                    + "\n" + g.getSenha1() + "");
+            //JOptionPane.showMessageDialog(null, g.getUsuario1() + ""
+                //    + "\n" + g.getSenha1() + "");
 
         }
 
