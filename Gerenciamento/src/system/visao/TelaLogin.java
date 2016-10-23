@@ -1,8 +1,8 @@
-package Visao;
+package system.visao;
 
 
-import Control.ControlLogin;
-import Visao.Interface;
+import system.control.ControlLogin;
+import system.visao.Interface;
 import javax.swing.JOptionPane;
 
 /*

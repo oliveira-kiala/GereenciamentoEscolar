@@ -1,4 +1,4 @@
-package Model;
+package system.model;
 
 public class Professor {
 

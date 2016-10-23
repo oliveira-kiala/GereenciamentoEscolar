@@ -1,10 +1,10 @@
 
-package Control;
+package system.control;
 
 import javax.swing.JTable;
-import Visao.CadastroAcademico;
-import Visao.CadastroProfessor1;
-import Visao.Interface;
+import system.visao.CadastroAcademico;
+import system.visao.CadastroProfessor1;
+import system.visao.Interface;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 

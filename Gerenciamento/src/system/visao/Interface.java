@@ -1,6 +1,6 @@
-package Visao;
+package system.visao;
 
-import Control.ControlInterface;
+import system.control.ControlInterface;
 import javax.swing.JTable;
 /**
  *

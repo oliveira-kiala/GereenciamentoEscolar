@@ -1,4 +1,4 @@
-package Visao;
+package system.visao;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -9,8 +9,8 @@ package Visao;
  *
  * @author comp2
  */
-import Control.ControlAcademico;
-import Model.Academico;
+import system.control.ControlAcademico;
+import system.model.Academico;
 import javax.swing.JOptionPane;
 import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 

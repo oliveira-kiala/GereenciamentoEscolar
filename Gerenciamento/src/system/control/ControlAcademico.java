@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Control;
+package system.control;
 
-import Model.Academico;
-import Visao.CadastroAcademico;
+import system.model.Academico;
+import system.visao.CadastroAcademico;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.ButtonModel;

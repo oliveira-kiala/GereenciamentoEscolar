@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Visao;
+package system.visao;
 
-import Control.ControlProfessor;
-import Model.Professor;
+import system.control.ControlProfessor;
+import system.model.Professor;
 import javax.swing.JOptionPane;
 import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
