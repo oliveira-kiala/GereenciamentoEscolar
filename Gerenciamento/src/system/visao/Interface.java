@@ -26,11 +26,13 @@ public class Interface extends javax.swing.JFrame {
 
         jMenu3 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
         PainelPrincipal1 = new javax.swing.JDesktopPane();
         BarraMenu1 = new javax.swing.JMenuBar();
         Menucadastro1 = new javax.swing.JMenu();
         MenuItemCadastroProfessor1 = new javax.swing.JMenuItem();
         MenuItemCadastroAcademico2 = new javax.swing.JMenuItem();
+        MenuItemCadastroFuncionario3 = new javax.swing.JMenuItem();
         Menurelatorio2 = new javax.swing.JMenu();
         MenuItemRelatorioProfessor3 = new javax.swing.JMenuItem();
         MenuItemRelatorioAcademico4 = new javax.swing.JMenuItem();
@@ -38,6 +40,8 @@ public class Interface extends javax.swing.JFrame {
         jMenu3.setText("jMenu3");
 
         jMenu4.setText("jMenu4");
+
+        jMenuItem1.setText("jMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sistema de Gerenciamento Escolar");
@@ -76,6 +80,16 @@ public class Interface extends javax.swing.JFrame {
             }
         });
         Menucadastro1.add(MenuItemCadastroAcademico2);
+
+        MenuItemCadastroFuncionario3.addActionListener(listener);
+        MenuItemCadastroFuncionario3.setActionCommand("funcionario");
+        MenuItemCadastroFuncionario3.setText("Funcionario");
+        MenuItemCadastroFuncionario3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuItemCadastroFuncionario3ActionPerformed(evt);
+            }
+        });
+        Menucadastro1.add(MenuItemCadastroFuncionario3);
 
         BarraMenu1.add(Menucadastro1);
 
@@ -132,17 +146,16 @@ public class Interface extends javax.swing.JFrame {
           objeto.setVisible(true);*/
     }//GEN-LAST:event_MenuItemCadastroAcademico2ActionPerformed
 
-    public static void main(String args[]) {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Interface().setVisible(true);
-            }
-        });
-    }
+    private void MenuItemCadastroFuncionario3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuItemCadastroFuncionario3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MenuItemCadastroFuncionario3ActionPerformed
+
+   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar BarraMenu1;
     public javax.swing.JMenuItem MenuItemCadastroAcademico2;
+    public javax.swing.JMenuItem MenuItemCadastroFuncionario3;
     public javax.swing.JMenuItem MenuItemCadastroProfessor1;
     private javax.swing.JMenuItem MenuItemRelatorioAcademico4;
     private javax.swing.JMenuItem MenuItemRelatorioProfessor3;
@@ -151,5 +164,6 @@ public class Interface extends javax.swing.JFrame {
     public javax.swing.JDesktopPane PainelPrincipal1;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenuItem jMenuItem1;
     // End of variables declaration//GEN-END:variables
 }

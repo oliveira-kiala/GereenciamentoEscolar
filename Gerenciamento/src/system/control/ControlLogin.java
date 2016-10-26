@@ -59,7 +59,7 @@ public class ControlLogin implements ActionListener {
          if ("login".equals(ae.getActionCommand())) {
 
             try {
-                String arquivoler = "login.txt";
+                
               
                 
                 //if ("adm".equals(frame2.usuario1.getText()) && "1234".equals(frame2.senha1.getText())) {
