@@ -21,6 +21,7 @@ public class Interface extends javax.swing.JFrame {
     }
 
     @SuppressWarnings("unchecked")
+    
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -30,9 +31,9 @@ public class Interface extends javax.swing.JFrame {
         PainelPrincipal1 = new javax.swing.JDesktopPane();
         BarraMenu1 = new javax.swing.JMenuBar();
         Menucadastro1 = new javax.swing.JMenu();
-        MenuItemCadastroProfessor1 = new javax.swing.JMenuItem();
         MenuItemCadastroAcademico2 = new javax.swing.JMenuItem();
         MenuItemCadastroFuncionario3 = new javax.swing.JMenuItem();
+        MenuItemCadastroProfessor1 = new javax.swing.JMenuItem();
         Menurelatorio2 = new javax.swing.JMenu();
         MenuItemRelatorioProfessor3 = new javax.swing.JMenuItem();
         MenuItemRelatorioAcademico4 = new javax.swing.JMenuItem();
@@ -61,16 +62,6 @@ public class Interface extends javax.swing.JFrame {
         Menucadastro1.setText("Cadastro   ");
         Menucadastro1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
 
-        MenuItemCadastroProfessor1.addActionListener(listener);
-        MenuItemCadastroProfessor1.setActionCommand("professor");
-        MenuItemCadastroProfessor1.setText("Professor");
-        MenuItemCadastroProfessor1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MenuItemCadastroProfessor1ActionPerformed(evt);
-            }
-        });
-        Menucadastro1.add(MenuItemCadastroProfessor1);
-
         MenuItemCadastroAcademico2.addActionListener(listener);
         MenuItemCadastroAcademico2.setActionCommand("academico");
         MenuItemCadastroAcademico2.setText("Acadêmico");
@@ -84,12 +75,12 @@ public class Interface extends javax.swing.JFrame {
         MenuItemCadastroFuncionario3.addActionListener(listener);
         MenuItemCadastroFuncionario3.setActionCommand("funcionario");
         MenuItemCadastroFuncionario3.setText("Funcionario");
-        MenuItemCadastroFuncionario3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MenuItemCadastroFuncionario3ActionPerformed(evt);
-            }
-        });
         Menucadastro1.add(MenuItemCadastroFuncionario3);
+
+        MenuItemCadastroProfessor1.addActionListener(listener);
+        MenuItemCadastroProfessor1.setActionCommand("professor");
+        MenuItemCadastroProfessor1.setText("Professor");
+        Menucadastro1.add(MenuItemCadastroProfessor1);
 
         BarraMenu1.add(Menucadastro1);
 
@@ -98,11 +89,6 @@ public class Interface extends javax.swing.JFrame {
         Menurelatorio2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
 
         MenuItemRelatorioProfessor3.setText("Professor");
-        MenuItemRelatorioProfessor3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MenuItemRelatorioProfessor3ActionPerformed(evt);
-            }
-        });
         Menurelatorio2.add(MenuItemRelatorioProfessor3);
 
         MenuItemRelatorioAcademico4.setText("Acadêmico");
@@ -127,28 +113,9 @@ public class Interface extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void MenuItemCadastroProfessor1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuItemCadastroProfessor1ActionPerformed
-        
-    }//GEN-LAST:event_MenuItemCadastroProfessor1ActionPerformed
-
-    private void MenuItemRelatorioProfessor3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuItemRelatorioProfessor3ActionPerformed
-
-        /*CadastroProfessor1 objeto = new CadastroProfessor1();
-          PainelPrincipal1.add(objeto);
-          objeto.setVisible(true);*/
-
-
-    }//GEN-LAST:event_MenuItemRelatorioProfessor3ActionPerformed
-
     private void MenuItemCadastroAcademico2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuItemCadastroAcademico2ActionPerformed
-       /* CadastroAcademico objeto = new CadastroAcademico();
-          PainelPrincipal1.add(objeto);
-          objeto.setVisible(true);*/
-    }//GEN-LAST:event_MenuItemCadastroAcademico2ActionPerformed
-
-    private void MenuItemCadastroFuncionario3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuItemCadastroFuncionario3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_MenuItemCadastroFuncionario3ActionPerformed
+    }//GEN-LAST:event_MenuItemCadastroAcademico2ActionPerformed
 
    
 

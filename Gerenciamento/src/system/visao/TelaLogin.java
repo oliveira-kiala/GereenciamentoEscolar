@@ -1,8 +1,9 @@
 package system.visao;
 
-
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import system.control.ControlLogin;
-import system.visao.Interface;
 import javax.swing.JOptionPane;
 
 /*
@@ -10,19 +11,36 @@ import javax.swing.JOptionPane;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author oliveira kiala
  */
 public class TelaLogin extends javax.swing.JFrame {
 
-   private ControlLogin listener = new ControlLogin(this);
+    private static TelaLogin frame2;
+
+    // private static TelaLogin frame2;
+    private ControlLogin listener = new ControlLogin(this);
+
     /**
      * Creates new form TelaLogin
      */
     public TelaLogin() {
         initComponents();
+    }
+
+    public static String ler(String mensagem) throws IOException {
+        FileReader fileReader = new FileReader(mensagem);
+        BufferedReader bufferedReader = new BufferedReader(fileReader);
+
+        String linha = "";
+        while (bufferedReader.ready()) {
+            linha += bufferedReader.readLine();
+            System.out.println(linha);
+        }
+
+        bufferedReader.close();
+        return linha;
     }
 
     /**
@@ -48,27 +66,10 @@ public class TelaLogin extends javax.swing.JFrame {
         botaoLogin.addActionListener(listener);
         botaoLogin.setActionCommand("login");
         botaoLogin.setText("Fazer Login");
-        botaoLogin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botaoLoginActionPerformed(evt);
-            }
-        });
         getContentPane().add(botaoLogin);
         botaoLogin.setBounds(210, 280, 100, 23);
-
-        usuario1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                usuario1ActionPerformed(evt);
-            }
-        });
         getContentPane().add(usuario1);
         usuario1.setBounds(110, 110, 300, 30);
-
-        senha1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                senha1ActionPerformed(evt);
-            }
-        });
         getContentPane().add(senha1);
         senha1.setBounds(110, 190, 300, 30);
 
@@ -89,18 +90,6 @@ public class TelaLogin extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(515, 428));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void botaoLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoLoginActionPerformed
-        // login 
-    }//GEN-LAST:event_botaoLoginActionPerformed
-
-    private void usuario1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuario1ActionPerformed
-        
-    }//GEN-LAST:event_usuario1ActionPerformed
-
-    private void senha1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_senha1ActionPerformed
-
-    }//GEN-LAST:event_senha1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -129,6 +118,17 @@ public class TelaLogin extends javax.swing.JFrame {
         }
         //</editor-fold>
 
+        String outro = "C:\\Users\\oliveira\\Desktop\\documentos\\login.txt";
+
+        try {
+
+            System.out.println(ler(outro));
+
+        } catch (IOException ex) {
+
+            JOptionPane.showMessageDialog(null, "nao tem arquivo");
+
+        }
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

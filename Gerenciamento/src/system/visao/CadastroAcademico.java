@@ -10,9 +10,6 @@ package system.visao;
  * @author comp2
  */
 import system.control.ControlAcademico;
-import system.model.Academico;
-import javax.swing.JOptionPane;
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 public class CadastroAcademico extends javax.swing.JInternalFrame {
 
@@ -36,10 +33,10 @@ public class CadastroAcademico extends javax.swing.JInternalFrame {
 
         jCheckBox1 = new javax.swing.JCheckBox();
         sexo = new javax.swing.ButtonGroup();
+        Textgrau = new javax.swing.JTextField();
         Textnome = new javax.swing.JTextField();
         Textcurso = new javax.swing.JTextField();
         Textserie = new javax.swing.JTextField();
-        Textgrau = new javax.swing.JTextField();
         Textmatricula = new javax.swing.JTextField();
         Texttelefone = new javax.swing.JTextField();
         TextRG = new javax.swing.JTextField();
@@ -69,39 +66,13 @@ public class CadastroAcademico extends javax.swing.JInternalFrame {
         jCheckBox1.setText("jCheckBox1");
 
         setClosable(true);
+        setResizable(true);
         setTitle("Cadastro Academico");
 
-        Textnome.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TextnomeActionPerformed(evt);
-            }
-        });
-
-        Textserie.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TextserieActionPerformed(evt);
-            }
-        });
-
-        Textgrau.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TextgrauActionPerformed(evt);
-            }
-        });
-
-        TextRG.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TextRGActionPerformed(evt);
-            }
-        });
-
+        Buttoncadastrar.addActionListener(listener);
+        Buttoncadastrar.setActionCommand("Cadastrar");
         Buttoncadastrar.setText("Cadastrar");
         /*
-        Buttoncadastrar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtoncadastrarActionPerformed(evt);
-            }
-        });
         */
         Buttoncadastrar.addActionListener(listener);
 
@@ -134,12 +105,6 @@ public class CadastroAcademico extends javax.swing.JInternalFrame {
         limpar.setText("Limpar");
 
         jLabel14.setText("Email:");
-
-        jTextemail.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextemailActionPerformed(evt);
-            }
-        });
 
         jComboEstado.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SC", "PR", "SP", "RJ" }));
 
@@ -183,9 +148,7 @@ public class CadastroAcademico extends javax.swing.JInternalFrame {
                                     .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(Textgrau, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
-                                        .addComponent(Textmatricula))
+                                    .addComponent(Textmatricula, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(Textcidade, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(TextCEP, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
@@ -238,7 +201,6 @@ public class CadastroAcademico extends javax.swing.JInternalFrame {
                             .addComponent(jLabel2))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Textgrau, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel4)
                             .addComponent(jLabel6)
                             .addComponent(Texttelefone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -273,32 +235,8 @@ public class CadastroAcademico extends javax.swing.JInternalFrame {
                         .addContainerGap(105, Short.MAX_VALUE))))
         );
 
-        setBounds(0, 0, 532, 504);
+        setBounds(0, 0, 561, 504);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void TextRGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextRGActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TextRGActionPerformed
-
-    private void TextserieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextserieActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TextserieActionPerformed
-
-    private void TextnomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextnomeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TextnomeActionPerformed
-
-    private void TextgrauActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextgrauActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TextgrauActionPerformed
-
-    private void ButtoncadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtoncadastrarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ButtoncadastrarActionPerformed
-
-    private void jTextemailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextemailActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextemailActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

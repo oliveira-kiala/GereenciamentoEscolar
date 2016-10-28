@@ -19,7 +19,8 @@ import javax.swing.JOptionPane;
 public class ControlAcademico implements ActionListener {
 
     private CadastroAcademico frame1;
-   
+    
+
     public ControlAcademico(CadastroAcademico frame) {
         this.frame1 = frame;
     }
@@ -42,7 +43,6 @@ public class ControlAcademico implements ActionListener {
         a.setCidade(frame1.Textcidade.getText());
         a.setSexo((String) frame1.sexo_sexo.getSelectedItem());
         a.setEstado((String) frame1.jComboEstado.getSelectedItem());
-        
 
         if ("Limpar".equalsIgnoreCase(ae.getActionCommand())) {
             frame1.Textnome.setText("");
@@ -73,7 +73,6 @@ public class ControlAcademico implements ActionListener {
                     + "\n" + a.getCep() + ""
                     + "\n" + a.getCidade() + ""
                     + "\n" + a.getEstado());
-            
 
         }
 

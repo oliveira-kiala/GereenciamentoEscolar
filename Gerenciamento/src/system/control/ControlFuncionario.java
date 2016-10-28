@@ -23,7 +23,6 @@ public class ControlFuncionario implements ActionListener {
         this.frame3 = frame;
     }
 
-    
     @Override
     @SuppressWarnings("empty-statement")
     public void actionPerformed(ActionEvent ae) {
@@ -42,10 +41,11 @@ public class ControlFuncionario implements ActionListener {
         }
 
         if ("Cadastrar".equals(ae.getActionCommand())) {
-            JOptionPane.showMessageDialog(null, a.getNome() + ""
-                    + "\n" + a.getCodigo() + ""
-                    + "\n" + a.getCargo());
-
+            JOptionPane.showMessageDialog(null, "Nome :"+a.getNome() + "\n Codigo :" + a.getCodigo() + "\nCargo : " + a.getCargo());
+            //JOptionPane.showMessageDialog(null, a.getNome() + ""
+              //      + "\n" + a.getCodigo() + ""
+                //    + "\n" + a.getCargo());
+            
         }
 
     }

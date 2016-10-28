@@ -13,11 +13,19 @@ import javax.swing.JOptionPane;
 
 public class ControlProfessor implements ActionListener {
 
-    private CadastroProfessor1 frame;
+    private CadastroProfessor1 frame =null;
 
     public ControlProfessor(CadastroProfessor1 frame) {
         this.frame = frame;
     }
+    /*public void abreForm() {
+   if (frame == null) {
+      frame = mew frame();
+   }
+   frame.setVisible(true);
+    }*/
+   
+
 
     @Override
     public void actionPerformed(ActionEvent ae) {

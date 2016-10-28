@@ -79,11 +79,6 @@ public class CadastroProfessor1 extends javax.swing.JInternalFrame {
         jLabel8.setText("Estado:");
 
         Estado.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SC", "PR", "SP", "RJ" }));
-        Estado.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                EstadoActionPerformed(evt);
-            }
-        });
 
         jLabel9.setText("CEP");
 
@@ -96,11 +91,6 @@ public class CadastroProfessor1 extends javax.swing.JInternalFrame {
         BotaoCadatrar.addActionListener(listener);
         BotaoCadatrar.setActionCommand("Cadastrar");
         BotaoCadatrar.setText("Cadastrar");
-        BotaoCadatrar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoCadatrarActionPerformed(evt);
-            }
-        });
 
         limpar.addActionListener(listener);
         limpar.setActionCommand("limpar");
@@ -111,20 +101,10 @@ public class CadastroProfessor1 extends javax.swing.JInternalFrame {
         jLabel14.setText("Titulo :");
 
         TextTitulo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Bacharel", "Lincenciado", "Especialista", "Mestrado", "Doutor" }));
-        TextTitulo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TextTituloActionPerformed(evt);
-            }
-        });
 
         jLabel15.setText("Disciplina: ");
 
         TextDisciplina.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Programação I", "Estrutura Dado I", "Estrutura Dado II", "Topicos Especial" }));
-        TextDisciplina.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TextDisciplinaActionPerformed(evt);
-            }
-        });
 
         sexo_sexo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Masculino", "Femenino" }));
 
@@ -168,30 +148,27 @@ public class CadastroProfessor1 extends javax.swing.JInternalFrame {
                                         .addComponent(jTextBairro)))))
                         .addComponent(jLabel2)
                         .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel11)
+                            .addGap(45, 45, 45)
+                            .addComponent(jTextTelef, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel15)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(TextDisciplina, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createSequentialGroup()
                             .addGap(67, 67, 67)
-                            .addComponent(codigo, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(jLabel11)
-                                .addGap(45, 45, 45)
-                                .addComponent(jTextTelef, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(TextDisciplina, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addGap(67, 67, 67)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(201, 201, 201)
-                                        .addComponent(jLabel8)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Estado, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(53, 53, 53)
-                                        .addComponent(BotaoCadatrar, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(46, 46, 46)
-                                        .addComponent(limpar, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(codigo, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(201, 201, 201)
+                                    .addComponent(jLabel8)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(Estado, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(53, 53, 53)
+                                    .addComponent(BotaoCadatrar, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(46, 46, 46)
+                                    .addComponent(limpar, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -285,22 +262,6 @@ public class CadastroProfessor1 extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void EstadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EstadoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_EstadoActionPerformed
-
-    private void TextTituloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextTituloActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TextTituloActionPerformed
-
-    private void TextDisciplinaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextDisciplinaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TextDisciplinaActionPerformed
-
-    private void BotaoCadatrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoCadatrarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_BotaoCadatrarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

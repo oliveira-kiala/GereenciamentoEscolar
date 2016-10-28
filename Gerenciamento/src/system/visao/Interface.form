@@ -38,18 +38,6 @@
             </Property>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="MenuItemCadastroProfessor1">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Professor"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItemCadastroProfessor1ActionPerformed"/>
-              </Events>
-              <AuxValues>
-                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="MenuItemCadastroProfessor1.addActionListener(listener);&#xa;MenuItemCadastroProfessor1.setActionCommand(&quot;professor&quot;);"/>
-                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-              </AuxValues>
-            </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="MenuItemCadastroAcademico2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Acad&#xea;mico"/>
@@ -66,11 +54,17 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Funcionario"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItemCadastroFuncionario3ActionPerformed"/>
-              </Events>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="MenuItemCadastroFuncionario3.addActionListener(listener);&#xa;MenuItemCadastroFuncionario3.setActionCommand(&quot;funcionario&quot;);"/>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+              </AuxValues>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="MenuItemCadastroProfessor1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Professor"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="MenuItemCadastroProfessor1.addActionListener(listener);&#xa;MenuItemCadastroProfessor1.setActionCommand(&quot;professor&quot;);"/>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
               </AuxValues>
             </MenuItem>
@@ -91,9 +85,6 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Professor"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItemRelatorioProfessor3ActionPerformed"/>
-              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="MenuItemRelatorioAcademico4">
               <Properties>
