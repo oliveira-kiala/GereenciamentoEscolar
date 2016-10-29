@@ -15,7 +15,7 @@ import java.io.IOException;
  *
  * @author oliveira kiala
  */
-class funcoes {
+public class funcoes {
 
     public void guardar(String mensagem, String arquivo) throws IOException{
 
@@ -28,6 +28,20 @@ class funcoes {
         bufferedWriter.close();
 
     }
+    public static String ler(String mensagem) throws IOException {
+        FileReader fileReader = new FileReader(mensagem);
+        BufferedReader bufferedReader = new BufferedReader(fileReader);
+
+        String linha = "";
+        while (bufferedReader.ready()) {
+            linha += bufferedReader.readLine();
+            System.out.println(linha);
+        }
+
+        bufferedReader.close();
+        return linha;
+    }
+  
    
 
 }

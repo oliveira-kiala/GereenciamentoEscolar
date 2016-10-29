@@ -27,13 +27,20 @@ public class ControlInterface implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent ae) {
 
-        if ("academico".equalsIgnoreCase(ae.getActionCommand())) {
+         if ("academico".equalsIgnoreCase(ae.getActionCommand())) {
+         try {
 
-            CadastroAcademico tela = new CadastroAcademico();
-            frame3.PainelPrincipal1.add(tela);
-            tela.setVisible(true);
+         //if ("adm".equals(frame2.usuario1.getText()) && "1234".equals(frame2.senha1.getText())) {
+         func.guardar("O usuario ", "C:\\Users\\oliveira\\Desktop\\documentos\\Relatorio.txt");
+         CadastroAcademico tela = new CadastroAcademico();
+         frame3.PainelPrincipal1.add(tela);
+         tela.setVisible(true);
+         } catch (IOException ex) {
+         JOptionPane.showMessageDialog(null, "Usuário ou senha Inválida");
+         }
 
-        }
+         }
+         
         if ("professor".equalsIgnoreCase(ae.getActionCommand())) {
 
             try {
@@ -49,11 +56,21 @@ public class ControlInterface implements ActionListener {
             }
 
         }
-        if ("funcionario".equalsIgnoreCase(ae.getActionCommand())) {
-            CadastroFuncionario tela3 = new CadastroFuncionario();
-            frame3.PainelPrincipal1.add(tela3);
-            tela3.setVisible(true);
-        }
+        /* if ("funcionario".equalsIgnoreCase(ae.getActionCommand())) {
+
+         try {
+
+         //if ("adm".equals(frame2.usuario1.getText()) && "1234".equals(frame2.senha1.getText())) {
+         func.guardar("O usuario acesso area de cadastro professor", "C:\\Users\\oliveira\\Desktop\\documentos\\Relatorio.txt");
+         CadastroFuncionario tela3 = new CadastroFuncionario();
+         frame3.PainelPrincipal1.add(tela3);
+         tela3.setVisible(true);
+
+         } catch (IOException ex) {
+         JOptionPane.showMessageDialog(null, "Usuário ou senha Inválida");
+         }
+
+         }*/
 
     }
 

@@ -65,11 +65,13 @@ public class Interface extends javax.swing.JFrame {
         MenuItemCadastroAcademico2.addActionListener(listener);
         MenuItemCadastroAcademico2.setActionCommand("academico");
         MenuItemCadastroAcademico2.setText("Acadêmico");
+        /*
         MenuItemCadastroAcademico2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MenuItemCadastroAcademico2ActionPerformed(evt);
             }
         });
+        */
         Menucadastro1.add(MenuItemCadastroAcademico2);
 
         MenuItemCadastroFuncionario3.addActionListener(listener);
