@@ -51,12 +51,14 @@ public class Interface extends javax.swing.JFrame {
         PainelPrincipal1.setLayout(PainelPrincipal1Layout);
         PainelPrincipal1Layout.setHorizontalGroup(
             PainelPrincipal1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 669, Short.MAX_VALUE)
+            .addGap(0, 2000, Short.MAX_VALUE)
         );
         PainelPrincipal1Layout.setVerticalGroup(
             PainelPrincipal1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 386, Short.MAX_VALUE)
+            .addGap(0, 923, Short.MAX_VALUE)
         );
+
+        BarraMenu1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         Menucadastro1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cadastros .png"))); // NOI18N
         Menucadastro1.setText("Cadastro   ");
@@ -111,7 +113,7 @@ public class Interface extends javax.swing.JFrame {
             .addComponent(PainelPrincipal1)
         );
 
-        setSize(new java.awt.Dimension(685, 502));
+        setSize(new java.awt.Dimension(2016, 1039));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

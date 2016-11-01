@@ -8,6 +8,7 @@ import java.io.IOException;
 import javax.swing.JOptionPane;
 import system.visao.CadastroAcademico;
 import system.visao.CadastroFuncionario;
+import system.visao.TelaLogin;
 
 /**
  *
@@ -19,6 +20,7 @@ public class ControlInterface implements ActionListener {
     private Object PainelPrincipal1;
 
     funcoes func = new funcoes();
+    TelaLogin log = new TelaLogin();
 
     public ControlInterface(Interface frame3) {
         this.frame3 = frame3;
@@ -27,26 +29,24 @@ public class ControlInterface implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent ae) {
 
-         if ("academico".equalsIgnoreCase(ae.getActionCommand())) {
-         try {
+        if ("academico".equalsIgnoreCase(ae.getActionCommand())) {
+            try {
 
-         //if ("adm".equals(frame2.usuario1.getText()) && "1234".equals(frame2.senha1.getText())) {
-         func.guardar("O usuario ", "C:\\Users\\oliveira\\Desktop\\documentos\\Relatorio.txt");
-         CadastroAcademico tela = new CadastroAcademico();
-         frame3.PainelPrincipal1.add(tela);
-         tela.setVisible(true);
-         } catch (IOException ex) {
-         JOptionPane.showMessageDialog(null, "Usuário ou senha Inválida");
-         }
+                func.guardar("O usuario acessou area academica", "C:\\Users\\oliveira\\Documents\\gerenciamentoescolar\\Relatorio.txt");
+                CadastroAcademico tela = new CadastroAcademico();
+                frame3.PainelPrincipal1.add(tela);
+                tela.setVisible(true);
+            } catch (IOException ex) {
+                JOptionPane.showMessageDialog(null, "Usuário ou senha Inválida");
+            }
 
-         }
-         
+        }
+
         if ("professor".equalsIgnoreCase(ae.getActionCommand())) {
 
             try {
 
-                //if ("adm".equals(frame2.usuario1.getText()) && "1234".equals(frame2.senha1.getText())) {
-                func.guardar("O usuario acesso area de cadastro professor", "C:\\Users\\oliveira\\Desktop\\documentos\\Relatorio.txt");
+                func.guardar("O usuario acessou area de cadastro professor", "C:\\Users\\oliveira\\Documents\\gerenciamentoescolar\\Relatorio.txt");
                 CadastroProfessor1 tela2 = new CadastroProfessor1();
                 frame3.PainelPrincipal1.add(tela2);
                 tela2.setVisible(true);
@@ -56,21 +56,21 @@ public class ControlInterface implements ActionListener {
             }
 
         }
-        /* if ("funcionario".equalsIgnoreCase(ae.getActionCommand())) {
+        if ("funcionario".equalsIgnoreCase(ae.getActionCommand())) {
 
-         try {
+            try {
 
-         //if ("adm".equals(frame2.usuario1.getText()) && "1234".equals(frame2.senha1.getText())) {
-         func.guardar("O usuario acesso area de cadastro professor", "C:\\Users\\oliveira\\Desktop\\documentos\\Relatorio.txt");
-         CadastroFuncionario tela3 = new CadastroFuncionario();
-         frame3.PainelPrincipal1.add(tela3);
-         tela3.setVisible(true);
+                func.guardar("O usuario acessou area de cadastro funcionario", "C:\\Users\\oliveira\\Documents\\gerenciamentoescolar\\Relatorio.txt");
+                CadastroFuncionario tela3 = new CadastroFuncionario();
+                frame3.PainelPrincipal1.add(tela3);
+                tela3.setVisible(true);
 
-         } catch (IOException ex) {
-         JOptionPane.showMessageDialog(null, "Usuário ou senha Inválida");
-         }
+            } catch (IOException ex) {
+                JOptionPane.showMessageDialog(null, "Usuário ou senha Inválida");
+            }
 
-         }*/
+        }
+
 
     }
 

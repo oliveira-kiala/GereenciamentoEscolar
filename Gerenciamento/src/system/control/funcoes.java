@@ -17,12 +17,12 @@ import java.io.IOException;
  */
 public class funcoes {
 
-    public void guardar(String mensagem, String arquivo) throws IOException{
+    public void guardar(String mensagem, String arquivo) throws IOException,StringIndexOutOfBoundsException{
 
         FileWriter fileWriter = new FileWriter(arquivo, true);
         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
         String data = (new java.util.Date()).toString();
-        String msg = data + " : " + mensagem + "\n";
+        String msg = data + " : " + mensagem + "\r\n";
         bufferedWriter.write(msg);
         bufferedWriter.flush();
         bufferedWriter.close();

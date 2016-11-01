@@ -16,37 +16,44 @@ import static system.control.funcoes.ler;
  * @author oliveira kiala
  */
 public class TelaLogin extends javax.swing.JFrame {
-
+    
     private static TelaLogin frame2;
 
     // private static TelaLogin frame2;
     private ControlLogin listener = new ControlLogin(this);
     funcoes func = new funcoes();
-
+    
     public TelaLogin() {
         initComponents();
-
+        
         try {
-
-            String dado = funcoes.ler("C:\\Users\\oliveira\\Desktop\\documentos\\login.txt");
-
-            for (int i = 30; i < dado.length(); i++) {
-                char c = dado.charAt(32);
+            
+            String dado = funcoes.ler("C:\\Users\\oliveira\\Documents\\gerenciamentoescolar\\login.txt");
+            
+            int k = dado.length();
+            int j = 0;
+            
+            for (int i = 0; i < dado.length(); i++) {
+                char c = dado.charAt(i);
                 String p = Character.toString(c);
-
-                usuario1.setText(p);
+                if (p.equals(":")) {
+                    j = i;
+                }
             }
-            //String str = new String(x);
-            //usuario1.setText(str);
-
+            
+            usuario1.setText(dado.substring(j + 2, k));
         } catch (IOException ex) {
-
+            
             JOptionPane.showMessageDialog(null, "nao tem arquivo");
+            
+        }catch (StringIndexOutOfBoundsException ex) {
+
+            JOptionPane.showMessageDialog(null, "Existem um arquivo vazio com nome do novo diretorio...");
 
         }
-
+        
     }
-
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
