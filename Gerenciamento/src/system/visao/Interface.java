@@ -2,14 +2,8 @@ package system.visao;
 
 import system.control.ControlInterface;
 import javax.swing.JTable;
-/**
- *
- * @author oliveira kiala
- */
+
 public class Interface extends javax.swing.JFrame {
-    /**
-     * Creates new form Interface
-     */
     
     ControlInterface listener = new ControlInterface(this);
     
@@ -68,11 +62,6 @@ public class Interface extends javax.swing.JFrame {
         MenuItemCadastroAcademico2.setActionCommand("academico");
         MenuItemCadastroAcademico2.setText("Acadêmico");
         /*
-        MenuItemCadastroAcademico2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MenuItemCadastroAcademico2ActionPerformed(evt);
-            }
-        });
         */
         Menucadastro1.add(MenuItemCadastroAcademico2);
 
@@ -116,10 +105,6 @@ public class Interface extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(2016, 1039));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void MenuItemCadastroAcademico2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuItemCadastroAcademico2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MenuItemCadastroAcademico2ActionPerformed
 
    
 

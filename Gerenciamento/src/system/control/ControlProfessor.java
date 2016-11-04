@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package system.control;
 
 import system.model.Professor;
@@ -13,19 +8,11 @@ import javax.swing.JOptionPane;
 
 public class ControlProfessor implements ActionListener {
 
-    private CadastroProfessor1 frame =null;
+    private CadastroProfessor1 frame = null;
 
     public ControlProfessor(CadastroProfessor1 frame) {
         this.frame = frame;
     }
-    /*public void abreForm() {
-   if (frame == null) {
-      frame = mew frame();
-   }
-   frame.setVisible(true);
-    }*/
-   
-
 
     @Override
     public void actionPerformed(ActionEvent ae) {
@@ -49,7 +36,7 @@ public class ControlProfessor implements ActionListener {
         p.setDiscipl((String) frame.TextDisciplina.getSelectedItem());
         p.setSexo((String) frame.sexo_sexo.getSelectedItem());
         p.setTelef(frame.jTextTelef.getText());
-        
+
         if ("Limpar".equalsIgnoreCase(ae.getActionCommand())) {
             frame.Textnome.setText("");
             frame.jTextEmail.setText("");
@@ -61,10 +48,7 @@ public class ControlProfessor implements ActionListener {
             frame.CEP.setText("");
             frame.TextRG.setText("");
             frame.jTextTelef.setText("");
-            //frame.TextTitulo.setText("");
-            //frame.Estado.setText("");
-           //frame.TextDisciplina.setText("");
-
+            
         }
 
         if ("Cadastrar".equals(ae.getActionCommand())) {

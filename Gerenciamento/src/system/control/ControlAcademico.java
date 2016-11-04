@@ -1,21 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package system.control;
 
 import system.model.Academico;
 import system.visao.CadastroAcademico;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.ButtonModel;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author oliveira kiala
- */
+
 public class ControlAcademico implements ActionListener {
 
     private CadastroAcademico frame1;

@@ -1,16 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package system.visao;
 
 import system.control.ControlFuncionario;
 
-/**
- *
- * @author oliveira kiala
- */
 public class CadastroFuncionario extends javax.swing.JInternalFrame {
 
     private ControlFuncionario listener = new ControlFuncionario(this);

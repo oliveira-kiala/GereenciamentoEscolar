@@ -22,8 +22,6 @@ public class ControlLogin implements ActionListener {
         this.frame2 = frame2;
     }
 
-    
-
     @Override
     public void actionPerformed(ActionEvent ae) {
 
@@ -31,24 +29,22 @@ public class ControlLogin implements ActionListener {
 
         g.setUsuario1(frame2.usuario1.getText());
         g.setSenha1(frame2.senha1.getText());
-        
-       
 
         if ("login".equals(ae.getActionCommand())) {
 
             try {
 
-                //if ("adm".equals(frame2.usuario1.getText()) && "1234".equals(frame2.senha1.getText())) {
-                func.guardar(frame2.usuario1.getText(), "C:\\Users\\oliveira\\Documents\\gerenciamentoescolar\\login.txt");
-                Interface tela = new Interface();
-                tela.setVisible(true);
-                frame2.dispose();
+                if ("1234".equals(frame2.senha1.getText())) {
+                    func.guardar(frame2.usuario1.getText(), "C:\\Users\\oliveira\\Documents\\gerenciamentoescolar\\login.txt");
+                    Interface tela = new Interface();
+                    tela.setVisible(true);
+                    frame2.dispose();
+
+                    JOptionPane.showMessageDialog(null, "Usuario logado");
+
+                }
             } catch (IOException ex) {
                 JOptionPane.showMessageDialog(null, "Usuário ou senha Inválida");
-            } finally {
-
-                JOptionPane.showMessageDialog(null, "final");
-
             }
 
         }

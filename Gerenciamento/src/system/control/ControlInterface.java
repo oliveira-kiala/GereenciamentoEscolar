@@ -10,10 +10,6 @@ import system.visao.CadastroAcademico;
 import system.visao.CadastroFuncionario;
 import system.visao.TelaLogin;
 
-/**
- *
- * @author oliveira kiala
- */
 public class ControlInterface implements ActionListener {
 
     private Interface frame3;
@@ -30,7 +26,9 @@ public class ControlInterface implements ActionListener {
     public void actionPerformed(ActionEvent ae) {
 
         if ("academico".equalsIgnoreCase(ae.getActionCommand())) {
+
             try {
+                frame3.PainelPrincipal1.removeAll();
 
                 func.guardar("O usuario acessou area academica", "C:\\Users\\oliveira\\Documents\\gerenciamentoescolar\\Relatorio.txt");
                 CadastroAcademico tela = new CadastroAcademico();
@@ -45,7 +43,7 @@ public class ControlInterface implements ActionListener {
         if ("professor".equalsIgnoreCase(ae.getActionCommand())) {
 
             try {
-
+                frame3.PainelPrincipal1.removeAll();
                 func.guardar("O usuario acessou area de cadastro professor", "C:\\Users\\oliveira\\Documents\\gerenciamentoescolar\\Relatorio.txt");
                 CadastroProfessor1 tela2 = new CadastroProfessor1();
                 frame3.PainelPrincipal1.add(tela2);
@@ -56,10 +54,11 @@ public class ControlInterface implements ActionListener {
             }
 
         }
+
         if ("funcionario".equalsIgnoreCase(ae.getActionCommand())) {
 
             try {
-
+                frame3.PainelPrincipal1.removeAll();
                 func.guardar("O usuario acessou area de cadastro funcionario", "C:\\Users\\oliveira\\Documents\\gerenciamentoescolar\\Relatorio.txt");
                 CadastroFuncionario tela3 = new CadastroFuncionario();
                 frame3.PainelPrincipal1.add(tela3);
@@ -70,7 +69,6 @@ public class ControlInterface implements ActionListener {
             }
 
         }
-
 
     }
 

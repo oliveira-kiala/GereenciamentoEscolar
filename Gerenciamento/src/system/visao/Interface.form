@@ -47,9 +47,6 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Acad&#xea;mico"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItemCadastroAcademico2ActionPerformed"/>
-              </Events>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="/*"/>
                 <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="MenuItemCadastroAcademico2.addActionListener(listener);&#xa;MenuItemCadastroAcademico2.setActionCommand(&quot;academico&quot;);"/>

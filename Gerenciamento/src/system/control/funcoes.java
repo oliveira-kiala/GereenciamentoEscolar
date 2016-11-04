@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package system.control;
 
 import java.io.BufferedReader;
@@ -11,10 +7,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-/**
- *
- * @author oliveira kiala
- */
 public class funcoes {
 
     public void guardar(String mensagem, String arquivo) throws IOException,StringIndexOutOfBoundsException{
@@ -35,7 +27,7 @@ public class funcoes {
         String linha = "";
         while (bufferedReader.ready()) {
             linha += bufferedReader.readLine();
-            System.out.println(linha);
+           
         }
 
         bufferedReader.close();
