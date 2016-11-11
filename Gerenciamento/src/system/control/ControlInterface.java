@@ -30,7 +30,7 @@ public class ControlInterface implements ActionListener {
             try {
                 frame3.PainelPrincipal1.removeAll();
 
-                func.guardar("O usuario acessou area academica", "C:\\Users\\Paulo\\Documents\\TRAB\\Relatorio.txt");
+                func.guardar("O usuario acessou area academica", "C:\\Users\\comp15\\Documents\\TRAB\\Relatorio.txt");
                 CadastroAcademico tela = new CadastroAcademico();
                 frame3.PainelPrincipal1.add(tela);
                 tela.setVisible(true);
@@ -44,7 +44,7 @@ public class ControlInterface implements ActionListener {
 
             try {
                 frame3.PainelPrincipal1.removeAll();
-                func.guardar("O usuario acessou area de cadastro professor", "C:\\Users\\Paulo\\Documents\\TRAB\\Relatorio.txt");
+                func.guardar("O usuario acessou area de cadastro professor", "C:\\Users\\comp15\\Documents\\TRAB\\Relatorio.txt");
                 CadastroProfessor1 tela2 = new CadastroProfessor1();
                 frame3.PainelPrincipal1.add(tela2);
                 tela2.setVisible(true);
@@ -59,7 +59,7 @@ public class ControlInterface implements ActionListener {
 
             try {
                 frame3.PainelPrincipal1.removeAll();
-                func.guardar("O usuario acessou area de cadastro funcionario", "C:\\Users\\Paulo\\Documents\\TRAB\\Relatorio.txt");
+                func.guardar("O usuario acessou area de cadastro funcionario", "C:\\Users\\comp15\\Documents\\TRAB\\Relatorio.txt");
                 CadastroFuncionario tela3 = new CadastroFuncionario();
                 frame3.PainelPrincipal1.add(tela3);
                 tela3.setVisible(true);
