@@ -28,14 +28,14 @@
     <Menu class="javax.swing.JMenuBar" name="BarraMenu1">
       <Properties>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-          <Color id="Cursor Padr&#xe3;o"/>
+          <Color id="Default Cursor"/>
         </Property>
       </Properties>
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="Menucadastro1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagens/cadastros .png"/>
+              <Image iconType="2" name="C:\xampp\htdocs\GereenciamentoEscolar\Gerenciamento\src\imagens\cadastros .png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Cadastro   "/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -77,7 +77,7 @@
         <Menu class="javax.swing.JMenu" name="Menurelatorio2">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagens/relatorio.jpg"/>
+              <Image iconType="2" name="C:\xampp\htdocs\GereenciamentoEscolar\Gerenciamento\src\imagens\relatorio.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Relat&#xf3;rio"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">

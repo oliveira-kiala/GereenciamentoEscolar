@@ -16,7 +16,7 @@ public class TelaLogin extends javax.swing.JFrame {
         
         try {
             
-            String dado = funcoes.ler("C:\\Users\\oliveira\\Documents\\gerenciamentoescolar\\login.txt");
+            String dado = funcoes.ler("C:\\Users\\Paulo\\Documents\\TRAB\\login.txt");
             
             int k = dado.length();
             int j = 0;
@@ -77,7 +77,7 @@ public class TelaLogin extends javax.swing.JFrame {
         getContentPane().add(jLabel3);
         jLabel3.setBounds(20, 190, 70, 30);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/papel.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\xampp\\htdocs\\GereenciamentoEscolar\\Gerenciamento\\src\\imagens\\papel.jpg")); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 500, 390);
 

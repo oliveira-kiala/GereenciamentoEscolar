@@ -54,7 +54,7 @@ public class Interface extends javax.swing.JFrame {
 
         BarraMenu1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        Menucadastro1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cadastros .png"))); // NOI18N
+        Menucadastro1.setIcon(new javax.swing.ImageIcon("C:\\xampp\\htdocs\\GereenciamentoEscolar\\Gerenciamento\\src\\imagens\\cadastros .png")); // NOI18N
         Menucadastro1.setText("Cadastro   ");
         Menucadastro1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
 
@@ -77,7 +77,7 @@ public class Interface extends javax.swing.JFrame {
 
         BarraMenu1.add(Menucadastro1);
 
-        Menurelatorio2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/relatorio.jpg"))); // NOI18N
+        Menurelatorio2.setIcon(new javax.swing.ImageIcon("C:\\xampp\\htdocs\\GereenciamentoEscolar\\Gerenciamento\\src\\imagens\\relatorio.jpg")); // NOI18N
         Menurelatorio2.setText("Relatório");
         Menurelatorio2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
 

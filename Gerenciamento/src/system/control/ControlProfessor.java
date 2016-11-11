@@ -25,7 +25,7 @@ public class ControlProfessor implements ActionListener {
         p.setNome(frame.Textnome.getText());
         p.setEmail(frame.jTextEmail.getText());
         p.setCodigo(frame.codigo.getText());
-        p.setEndereco(frame.jTextEndereco.getText());
+        p.setEndereco(frame.CEP.getText());
         p.setCidade(frame.Cidade.getText());
         p.setBairro(frame.jTextBairro.getText());
         p.setCpf(frame.TextCPF.getText());
@@ -41,7 +41,7 @@ public class ControlProfessor implements ActionListener {
             frame.Textnome.setText("");
             frame.jTextEmail.setText("");
             frame.codigo.setText("");
-            frame.jTextEndereco.setText("");
+            frame.CEP.setText("");
             frame.Cidade.setText("");
             frame.jTextBairro.setText("");
             frame.TextCPF.setText("");
