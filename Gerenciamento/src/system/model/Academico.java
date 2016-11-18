@@ -8,9 +8,9 @@ public class Academico {
 
     private String nome;
     private String curso;
-    private int serie;
-    private int grau;
-    private int num_Matric;
+    private String serie;
+    private String grau;
+    private String num_Matric;
     private String telef;
     private String rg;
     private String data_Nasc;
@@ -18,9 +18,6 @@ public class Academico {
     private String cep;
     private String estado;
     private String cidade;
-    
-    //private String masculino;
-    //private String femenino;
     private String email;
 
     public String getEmail() {
@@ -30,25 +27,7 @@ public class Academico {
     public void setEmail(String email) {
         this.email = email;
     }
-    /*
-     public String getMasculino() {
-     return masculino;
-     }
-
-     public void setMasculino(String masculino) {
-     this.masculino = masculino;
-     }
-
-     public String getFemenino() {
-     return femenino;
-     }
-
-     public void setFemenino(String femenino) {
-     this.femenino = femenino;
-     }
-     */
     
-
     public String getNome() {
         return nome;
     }
@@ -65,27 +44,27 @@ public class Academico {
         this.curso = curso;
     }
 
-    public int getSerie() {
+    public String getSerie() {
         return serie;
     }
 
-    public void setSerie(int serie) {
+    public void setSerie(String serie) {
         this.serie = serie;
     }
 
-    public int getGrau() {
+    public String getGrau() {
         return grau;
     }
 
-    public void setGrau(int grau) {
+    public void setGrau(String grau) {
         this.grau = grau;
     }
 
-    public int getNum_Matric() {
+    public String getNum_Matric() {
         return num_Matric;
     }
 
-    public void setNum_Matric(int num_Matric) {
+    public void setNum_Matric(String num_Matric) {
         this.num_Matric = num_Matric;
     }
 

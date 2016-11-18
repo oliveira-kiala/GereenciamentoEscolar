@@ -35,7 +35,7 @@ public class ControlLogin implements ActionListener {
             try {
 
                 if ("1234".equals(frame2.senha1.getText())) {
-                    func.guardar(frame2.usuario1.getText(), "C:\\Users\\comp15\\Documents\\TRAB\\login.txt");
+                    func.guardar(frame2.usuario1.getText(), "C:\\Users\\oliveira\\Documents\\gerenciamentoescolar\\login.txt");
                     Interface tela = new Interface();
                     tela.setVisible(true);
                     frame2.dispose();

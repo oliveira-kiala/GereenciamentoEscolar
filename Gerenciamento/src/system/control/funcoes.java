@@ -33,7 +33,6 @@ public class funcoes {
         bufferedReader.close();
         return linha;
     }
-  
-   
+  }
 
-}
+

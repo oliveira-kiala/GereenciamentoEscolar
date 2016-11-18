@@ -16,7 +16,7 @@ public class TelaLogin extends javax.swing.JFrame {
         
         try {
             
-            String dado = funcoes.ler("C:\\Users\\comp15\\Documents\\TRAB\\login.txt");
+            String dado = funcoes.ler("C:\\Users\\oliveira\\Documents\\gerenciamentoescolar\\login.txt");
             
             int k = dado.length();
             int j = 0;

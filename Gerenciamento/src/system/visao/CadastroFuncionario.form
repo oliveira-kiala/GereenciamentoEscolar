@@ -54,8 +54,8 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel2" min="-2" pref="63" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jTextCodigo" min="-2" pref="79" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="225" max="-2" attributes="0"/>
+              <Component id="jTextCodigo" min="-2" pref="123" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="181" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -84,7 +84,7 @@
                   <Component id="CADASTRAR" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="LIMPAR" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="55" max="32767" attributes="0"/>
+              <EmptySpace pref="59" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

@@ -9,9 +9,33 @@ import javax.swing.JOptionPane;
 public class ControlProfessor implements ActionListener {
 
     private CadastroProfessor1 frame = null;
+    Professor p = new Professor();
 
     public ControlProfessor(CadastroProfessor1 frame) {
         this.frame = frame;
+    }
+
+    public void ObrigarCampos() {
+        if (frame.Textnome.getText().length() > 0 && frame.jTextEmail.getText().length() > 0 && frame.codigo.getText().length() > 0
+                && frame.CEP.getText().length() > 0 && frame.Cidade.getText().length() > 0 && frame.jTextBairro.getText().length() > 0
+                && frame.CEP.getText().length() > 0 && frame.CEP.getText().length() > 0 && frame.TextRG.getText().length() > 0 && frame.jTextTelef.getText().length() > 0) {
+            JOptionPane.showMessageDialog(null, p.getNome() + ""
+                    + "\n" + p.getNome() + ""
+                    + "\n" + p.getEmail() + ""
+                    + "\n" + p.getCodigo() + ""
+                    + "\n" + p.getEndereco() + ""
+                    + "\n" + p.getCidade() + ""
+                    + "\n" + p.getBairro() + ""
+                    + "\n" + p.getCpf() + ""
+                    + "\n" + p.getCep() + ""
+                    + "\n" + p.getRg() + ""
+                    + "\n" + p.getTitulo() + ""
+                    + "\n" + p.getEstado() + ""
+                    + "\n" + p.getTelef() + ""
+                    + "\n" + p.getDiscipl());
+        } else {
+            JOptionPane.showMessageDialog(null, "Todos Os capos são Obrigatorio");
+        }
     }
 
     @Override
@@ -19,8 +43,6 @@ public class ControlProfessor implements ActionListener {
         //salvar
         //excluir
         //localizar
-
-        Professor p = new Professor();
 
         p.setNome(frame.Textnome.getText());
         p.setEmail(frame.jTextEmail.getText());
@@ -48,25 +70,11 @@ public class ControlProfessor implements ActionListener {
             frame.CEP.setText("");
             frame.TextRG.setText("");
             frame.jTextTelef.setText("");
-            
+
         }
 
         if ("Cadastrar".equals(ae.getActionCommand())) {
-
-            JOptionPane.showMessageDialog(null, p.getNome() + ""
-                    + "\n" + p.getNome() + ""
-                    + "\n" + p.getEmail() + ""
-                    + "\n" + p.getCodigo() + ""
-                    + "\n" + p.getEndereco() + ""
-                    + "\n" + p.getCidade() + ""
-                    + "\n" + p.getBairro() + ""
-                    + "\n" + p.getCpf() + ""
-                    + "\n" + p.getCep() + ""
-                    + "\n" + p.getRg() + ""
-                    + "\n" + p.getTitulo() + ""
-                    + "\n" + p.getEstado() + ""
-                    + "\n" + p.getTelef() + ""
-                    + "\n" + p.getDiscipl());
+            ObrigarCampos();
         }
 
     }
